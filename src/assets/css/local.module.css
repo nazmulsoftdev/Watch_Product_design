@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.title{
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+
+.titleICon{
+    color: rgb(241, 19, 19);
+}
+
+.ProductName{
+    font-family: 'Bebas Neue', cursive;   
+     font-weight: bold;
+     color: #05132C;
+     font-size: 2.5em;
+}
+
+.PriceTitle{
+    color: #E0E0E0;
+    margin-bottom: 5px;
+}
+
+.ReviewWrap{
+    display: flex;
+}
+
+.StarRev{
+ color: #E44555;   
+}
+
+.CustomarRv{
+    color: #BAB6B1;
+    text-transform: uppercase;
+}
+
+
+
+/* Product Dis */
+.ProductItem_Wrap{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.ProductItem_Wrap img{
+    cursor: pointer;
+}
+
+/* Product info */
+
+.Product_Content{
+    display: flex;
+    justify-content: center;
+}
+
+.UserInput_Number{
+    margin-top: 15px;  
+    display: flex;
+    justify-content: space-around;
+}
+
+.ArrowIcon{
+ color: #b3b3b9;   
+ cursor: pointer;
+}
+.CardAction,.shareWrap{
+    margin-top: 15px;  
+    display: flex;
+    justify-content: center;
+  }
+
+
+.shareIcon{
+   width: 25px;
+   height: 25px;
+   padding: 4px;  
+   border: 2px solid #F4F4F4;
+   border-radius: 50%;
+  color: #AFA7AA;  
+  cursor: pointer;
+}
+
+
+/* Sell Component */
+
+.sell_Wrap{
+ width: 40px;
+ height: 40px;
+ padding: 20px;
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ margin: auto;
+}
+
+.SellIcon{
+ width: 25px;
+ height: 25px;
+ color: #FFFFFF;
+ text-align: center;
+ position: relative;
+ cursor: pointer;
+}
+
+.SellIcon:hover{
+  color: #FF0136;  
+}
+
+.SellNumber{
+ color: #FFFFFF;  
+  position: absolute;
+  top: 5px;
+  font-size: small;
+  font-weight: bold;
+}
+
+
+
+/* Order Summary Page */
+
+.Summary{
+ width: 250px;
+ height: 100%;
+ position: fixed;
+ padding: 10px;
+ background-color:#FFFFFF;   
+
+}
+
+
+.SummaryDis{
+width: 100%;
+height: 100%;  
+background-color:#FFFFFF;   
+
+}
+
+.SummaryContent{
+ margin-top: 30px;
+
+}

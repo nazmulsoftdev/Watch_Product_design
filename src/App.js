@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useReducer} from "react";
+import Product from "./Components/Product/Product";
+import './assets/css/global.css';
+import SellComponent from "./Components/SellComponent/SellComponent";
+import ContextApi from "./Context/ContextApi";
+
+const InitialState = 0;
+
+const reducer = (state, action) => {
+
+       switch (action) {
+           case 'Increment':
+               return state + 1;
+           case 'Decrement':
+               return state - 1;
+           default:
+               return state
+      }
+}
 
 function App() {
+
+  const [state, dispatch] = useReducer(reducer, InitialState);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ContextApi.Provider value={{count:state,CountDispatch:dispatch}}>
+          <Product />
+          <SellComponent/>
+      </ContextApi.Provider>
     </div>
   );
 }
